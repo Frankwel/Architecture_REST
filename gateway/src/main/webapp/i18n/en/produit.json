@@ -1,0 +1,27 @@
+{
+    "gatewayApp": {
+        "produit" : {
+            "home": {
+                "title": "Produits",
+                "createLabel": "Create a new Produit",
+                "createOrEditLabel": "Create or edit a Produit"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Produit {{ id }}?"
+            },
+            "detail": {
+                "title": "Produit"
+            },
+            "nom": "Nom",
+            "quantite": "Quantite",
+            "description": "Description"
+        }
+    },
+    "produitApp": {
+        "produit" : {
+            "created": "A new Produit is created with identifier {{ param }}",
+            "updated": "A Produit is updated with identifier {{ param }}",
+            "deleted": "A Produit is deleted with identifier {{ param }}"
+        }
+    }
+}
