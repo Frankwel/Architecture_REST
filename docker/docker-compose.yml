@@ -1,7 +1,7 @@
 version: '2'
 services:
     gateway-app:
-        image: gateway
+        image: frankwel/gateway
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
             - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
@@ -20,7 +20,7 @@ services:
         command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8
     
     produit-app:
-        image: produit
+        image: frankwel/produit
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
             - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config

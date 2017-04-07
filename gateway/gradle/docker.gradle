@@ -14,8 +14,8 @@ task buildDocker(type: Exec) {
         }
     }
     if (OperatingSystem.current().isWindows()) {
-        commandLine 'cmd', '/c', 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'gateway', 'build/docker/'
+        commandLine 'cmd', '/c', 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'frankwel/gateway', 'build/docker/'
     } else {
-        commandLine 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'gateway', 'build/docker/'
+        commandLine 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'frankwel/gateway', 'build/docker/'
     }
 }
